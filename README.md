@@ -1,6 +1,6 @@
 <!--- ![Zeppelin Banner](assets/zepbanner.png) ---> 
 # Axo
-Axo is a fork of Zeppelin, a moderation bot for Discord, designed with large servers and reliability in mind.
+Axo is a fork of [Zeppelin](https://github.com/ZeppelinBot/Zeppelin), a moderation bot for Discord, designed with large servers and reliability in mind.
 
 **Main features include:**
 - Extensive automoderator features (automod)
@@ -21,15 +21,5 @@ See https://zeppelin.arhan.dev/ for more details.
 
 ## Usage documentation
 For information on how to use the bot, see https://zeppelin.arhan.dev/docs
-
-## Development
-See [DEVELOPMENT.md](./DEVELOPMENT.md) for instructions on running the development environment.
-
-Once you have the environment up and running, see [MANAGEMENT.md](./MANAGEMENT.md) for how to manage your bot.
-
-## Production
-See [PRODUCTION.md](./PRODUCTION.md) for instructions on how to run the bot in production.
-
-Once you have the environment up and running, see [MANAGEMENT.md](./MANAGEMENT.md) for how to manage your bot.
 
 ![Zeppelin Banner](assets/zepbanner.png)
