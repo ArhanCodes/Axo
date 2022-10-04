@@ -11,7 +11,7 @@ import { shuffle } from "lodash";
 
 export const AboutCmd = utilityCmd({
   trigger: "about",
-  description: "Show information about Zeppelin's status on the server",
+  description: "Show information about Axo's status on the server",
   permission: "can_about",
 
   async run({ message: msg, pluginData }) {
@@ -77,23 +77,7 @@ export const AboutCmd = utilityCmd({
       ],
     };
 
-    const supporters = await pluginData.state.supporters.getAll();
-    const shuffledSupporters = shuffle(supporters);
-
-    if (supporters.length) {
-      const formattedSupporters = shuffledSupporters
-        // Bold every other supporter to make them easy to recognize from each other
-        .map((s, i) => (i % 2 === 0 ? `**${s.name}**` : `__${s.name}__`))
-        .join(" ");
-
-      aboutContent.embeds![0].fields!.push({
-        name: "Zeppelin supporters 🎉",
-        value:
-          "These amazing people have supported Zeppelin development by pledging on [Patreon](https://www.patreon.com/zeppelinbot):\n\n" +
-          formattedSupporters,
-        inline: false,
-      });
-    }
+  
 
     // For the embed color, find the highest colored role the bot has - this is their color on the server as well
     const botMember = await resolveMember(pluginData.client, pluginData.guild, pluginData.client.user!.id);
